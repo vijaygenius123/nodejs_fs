@@ -12,3 +12,7 @@ fs.mkdir(path.join(__dirname, directory), {}, (err) => {
     console.log('Folder Created')
 })
 
+fs.writeFile(path.join(__dirname, directory, filename), file_contents, (err) => {
+    if (err) throw err
+    console.log('Wrote Content Into File')
+})

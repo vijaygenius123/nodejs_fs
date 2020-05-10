@@ -36,3 +36,5 @@ fs.mkdir(path.join(__dirname,'/test',{},err=>{
 ```
 
 `fs.mkdir` will create a directory with the first argument passed, second argument is the options and the third argument is a callback.
+
+`fs.writeFile` will write the contents which is passed as the second argument into the filename which is passed as the first argument, the third argument is a callback which will retur error if any.
