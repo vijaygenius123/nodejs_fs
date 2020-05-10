@@ -24,3 +24,15 @@ console.log(path.parse(__filename));
 `path.dirname`  Gives the directory of the file
 `path.extname` Gives the extension of the file
 `path.parse` Gives an object with the properties of file like root, directory, base, name & extension. base is name + extension 
+
+
+```js
+const fs = require('fs');
+
+fs.mkdir(path.join(__dirname,'/test',{},err=>{
+    if err throw err;
+    console.log('Directory created');
+}))
+```
+
+`fs.mkdir` will create a directory with the first argument passed, second argument is the options and the third argument is a callback.

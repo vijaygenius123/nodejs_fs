@@ -1,12 +1,14 @@
 const path = require('path');
+const fs = require('fs');
 
+const directory = '/test'
+const filename = 'test.js'
+const file_contents = `
+console.log('hello world');
+`
 
-console.log('Without using path')
-console.log(__filename)
-console.log(__dirname)
+fs.mkdir(path.join(__dirname, directory), {}, (err) => {
+    if (err) throw err
+    console.log('Folder Created')
+})
 
-console.log('****************************************************************')
-console.log(path.basename(__filename))
-console.log(path.dirname(__filename))
-console.log(path.extname(__filename))
-console.log(path.parse(__filename))
