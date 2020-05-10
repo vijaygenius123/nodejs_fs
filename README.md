@@ -52,4 +52,4 @@ fs.readFile(path.join(__dirname, directory, filename), 'utf-8', (err, data) => {
     console.log(data)
 })
 ```
-`fs.writeFile` will read contents from the file passed as first argument, the second argument is the encodeding type  and the third argument is a callback which will return err and data.
+`fs.readFile` will read contents from the file passed as first argument, the second argument is the encodeding type  and the third argument is a callback which will return err and data.
