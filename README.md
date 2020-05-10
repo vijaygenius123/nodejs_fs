@@ -37,4 +37,19 @@ fs.mkdir(path.join(__dirname,'/test',{},err=>{
 
 `fs.mkdir` will create a directory with the first argument passed, second argument is the options and the third argument is a callback.
 
+```js
+fs.writeFile(path.join(__dirname, directory, filename), file_contents, (err) => {
+    if (err) throw err
+    console.log('Wrote Content Into File')
+})
+```
 `fs.writeFile` will write the contents which is passed as the second argument into the filename which is passed as the first argument, the third argument is a callback which will retur error if any.
+
+
+```js
+fs.readFile(path.join(__dirname, directory, filename), 'utf-8', (err, data) => {
+    if (err) throw err
+    console.log(data)
+})
+```
+`fs.writeFile` will read contents from the file passed as first argument, the second argument is the encodeding type  and the third argument is a callback which will return err and data.

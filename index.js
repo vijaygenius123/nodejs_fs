@@ -16,3 +16,8 @@ fs.writeFile(path.join(__dirname, directory, filename), file_contents, (err) => 
     if (err) throw err
     console.log('Wrote Content Into File')
 })
+
+fs.readFile(path.join(__dirname, directory, filename), 'utf-8', (err, data) => {
+    if (err) throw err
+    console.log(data)
+})
